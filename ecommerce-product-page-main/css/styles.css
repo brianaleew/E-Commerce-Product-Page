@@ -1,0 +1,24 @@
+:root {
+    --color-main: rgb(252, 130, 37);
+    --color-accent: rgb(163, 163, 163);
+}
+
+
+
+
+/* Main Page Styling */
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 3rem;
+    margin: 0 auto;
+    
+}
+.product-images {
+    border: 1px solid black;
+}
+
+.product-info {
+    border: 1px solid black;
+}
