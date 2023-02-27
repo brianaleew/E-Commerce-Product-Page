@@ -11,6 +11,9 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <title>Frontend Mentor | E-commerce product page</title>
   </head>
@@ -40,32 +43,39 @@
     <div class="main-container">
       <div class="product-images">
         <p>testing</p>
+        <div class="main-display"><img style="width: 35rem" src="/ecommerce-product-page-main/images/image-product-1.jpg" alt="A picture of the sneakers"></div>
+        <div class="product-thumbnails">
+          <img src="/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="">
+          <img src="/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="">
+          <img src="/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="">
+          <img src="/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="">
+        </div>
       </div>
       <div class="product-info">
-        <p>SNEAKER COMPANY</p>
-        <h1>Fall Limited Edition Sneakers</h1>
-        <p>
+        <p style="color: var(--color-main); font-weight: 600;">SNEAKER COMPANY</p>
+        <h1 style="font-weight: 600; font-size: 4rem; margin-top: 1rem;">Fall Limited Edition Sneakers</h1>
+        <p class="product-description">
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they’ll withstand everything
           the weather can offer.
         </p>
-        <span>
-          <h4>$125.00</h4>
-          <p>50%</p>
+        <div class="pricing">
+          <h4 style="font-size: 1.6rem;">$125.00</h4>
+          <p style="color: var(--color-main); background-color: rgba(247, 181, 58, 0.524); border-radius: 10px; width: 2.5rem; padding: 3px 0 0 10px; margin: 15px ">50%</p>
           <!-- 50% is styled with orange-->
-        </span>
-        <p>$250.00</p>
+        </div>
+        <p style="color: var(--color-accent); text-decoration: line-through;">$250.00</p>
         <!--  this needs a line through it -->
       </div>
     </div>
 
-    $125.00 50% $250.00 0 Add to cart
+    
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Briana Wright</a>.
     </div>
 
     <script src="./js/app.js"></script>

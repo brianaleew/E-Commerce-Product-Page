@@ -3,6 +3,10 @@
     --color-accent: rgb(163, 163, 163);
 }
 
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+}
 
 /* Navigation Bar */
 .navbar {
@@ -38,5 +42,20 @@
 }
 
 .product-info {
+    margin-top: 4rem;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.product-description {
+    color: var(--color-accent);
+
+    line-height: 30px;
+}
+
+.pricing {
+    display: flex;
+    
 }
