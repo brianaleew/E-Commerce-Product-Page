@@ -1,6 +1,6 @@
 :root {
     --color-main: rgb(252, 130, 37);
-    --color-accent: rgb(163, 163, 163);
+    --color-accent: rgb(151, 149, 149);
 }
 
 body {
@@ -38,24 +38,59 @@ body {
     
 }
 .product-images {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.product-images-main-display {
+    border-radius: 20px;
+    width: 35rem;
+    margin: 1rem 0 2rem 0;
 }
 
+.product-images-thumbnails {
+    margin: 1rem .5rem;
+    width: 8rem;
+    border-radius: 20px;
+}
+/* this hover style is being used to test how clicks will look later on */
+/* need to somehow add an overlay with opacity for on click! */
+.product-images-thumbnails:hover {
+    border: 3px solid var(--color-main);
+    color: rgba(255, 255, 255, 0.631);
+}
 .product-info {
     margin-top: 4rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     
 }
 
+
+
 .product-description {
     color: var(--color-accent);
-
+    margin-top: 0;
     line-height: 30px;
+    text-align: justify;
+    width: 650px;
+    font-size: 1.1rem;
 }
 
 .pricing {
     display: flex;
+    
+}
+
+.cart-btn {
+    width: 14rem;
+    height: 3.3rem;
+    margin: 0 0 0 15rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-main);
+    color: white;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
     
 }
