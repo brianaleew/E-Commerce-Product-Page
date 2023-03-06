@@ -13,21 +13,35 @@ body {
     font-family: 'Inter', sans-serif;
 }
 header {
-    background-color: pink;
+    
+}
+main {
+   
 }
 /* Navigation Bar */
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
+    margin: 10px 10px 3rem 6rem ;
     width: 100%;
     min-height: 70px;  
     padding: 0 1rem;
+    /* position: fixed; */
+    
+    background-color: white;
+    
+    
+}
+.nav-item {
+    margin: 0 2rem
+    
 }
 .nav-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 1rem;
+    /* margin-bottom: 20px; */
 }
 .nav-list li {
     list-style: none;
@@ -40,6 +54,12 @@ header {
 }
 .nav-brand {
     margin-right: 0px;
+}
+.nav-icons {
+    display: flex;
+    margin: 0 20px;
+    justify-content: flex-end;
+    /* having trouble making space btwn the two icons */
 }
 .hamburger {
     display: none;
@@ -63,6 +83,7 @@ header {
     gap: 3rem;
     margin: 0 auto;
     
+    
 }
 .product-images {
     /* border: 1px solid black; */
@@ -85,34 +106,90 @@ header {
     border: 3px solid var(--color-main);
     color: rgba(255, 255, 255, 0.631);
 }
+
+/* Product Information */
 .product-info {
     margin-top: 4rem;
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     
 }
-
-
+.product-info-brand {
+    color: var(--color-main); 
+    font-weight: 600;
+    margin-bottom: 1.1rem;
+}
+.product-info-name {
+    font-weight: 600; 
+    font-size: 4rem; 
+    
+}
 
 .product-description {
     color: var(--color-accent);
-    margin-top: 0;
+    margin: 50px 0;
     line-height: 30px;
     text-align: justify;
     width: 650px;
     font-size: 1.1rem;
-}
-
-.pricing {
-    display: flex;
     
 }
 
+
+
+.pricing {
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+.pricing-main-price {
+    font-size: 1.6rem;
+}
+.pricing-discount {
+    color: var(--color-main); 
+    background-color: rgba(244, 190, 89, 0.524);
+    border-radius: 10px;
+    width: 2.5rem;
+    padding: 6px 0px 6px 1px;
+    margin-left: 20px;
+    
+
+}
+.pricing-old-price {
+    color: var(--color-accent); 
+    text-decoration: line-through;
+    font-size: 1.2rem;
+
+}
+.quantity-cart {
+    display: flex;
+    margin: 4.5rem 0;
+}
+.pricing-quantity {
+    display: flex;
+    justify-content: space-evenly;
+    width: 13rem;
+    height: 3rem;
+    padding: 10px ;
+    background-color: rgb(235, 236, 236);
+    border-radius: 10px;
+
+}
+#quantity {
+    font-size: 1.2rem;
+}
+#increment {
+    align-self: center;
+    
+}
+#decrement {
+    align-self: center;
+
+}
 .cart-btn {
-    width: 14rem;
+    width: 15rem;
     height: 3.3rem;
-    margin: 0 0 0 15rem;
+    margin: 0 0 0 5rem;
     border: none;
     border-radius: 10px;
     background-color: var(--color-main);
@@ -120,11 +197,13 @@ header {
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
     
+    
 }
 
 
 /* Media Queries */
-@media screen (max-width: 768px){
+/* didnt have time to fix :/  */
+/* @media screen (max-width: 768px){
     .hamburger{
         display: block;
     }
@@ -153,4 +232,4 @@ header {
         left: 0;
     }
 
-}
+} */
